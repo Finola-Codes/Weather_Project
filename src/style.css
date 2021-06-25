@@ -1,0 +1,59 @@
+h1 {
+  padding: 30px;
+}
+
+h3 {
+  text-decoration: underline;
+  padding: 0px 0px 40px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 100px;
+}
+
+.container {
+  font-family: "Kanit", sans-serif;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  margin: 300px;
+}
+
+.search-bar-header {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.city-name {
+  font-weight: 900;
+  padding: 20px 0px 0px 20px;
+  font-size: 80px;
+}
+
+.live-time-date {
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.date {
+  margin: 0px;
+}
+
+.temperature-now {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.current-temp-celcius {
+  margin: 0px 5px -15px 20px;
+  font-weight: 600;
+}
+
+.current-temp-farenheit {
+  margin: 0px 10px 15px 20px;
+}
+
+.weather-text {
+  margin-top: 100px;
+  text-align: center;
+}
