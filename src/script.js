@@ -48,15 +48,12 @@ function showTemp(response) {
   let weatherDescriptionElement = document.querySelector(
     "#weather-description"
   );
-  if (currentTemperature < 0) {
+  if (currentTemperature <= 0) {
     weatherDescriptionElement.innerHTML =
       "It's very cold out there. Wrap up warm!";
-  } else if (currentTemperature < 15) {
-    weatherDescriptionElement.innerHTML = "It's a mild day.";
-  } else if (currentTemperature >= 15) {
-    weatherDescriptionElement.innerHTML =
-      "Maybe put on a jacket or a jumper today!";
-  } else if (currentTemperature >= 20) {
+  } else if (currentTemperature >= 10 === currentTemperature <= 19) {
+    weatherDescriptionElement.innerHTML = "Maybe put on a jumper.";
+  } else if (currentTemperature > 19) {
     weatherDescriptionElement.innerHTML =
       "It's a lovely warm day. <br /> Get outside and enjoy it!";
   }
