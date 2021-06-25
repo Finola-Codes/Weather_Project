@@ -1,5 +1,6 @@
 h1 {
   padding: 30px;
+  color: cornflowerblue;
 }
 
 h3 {
@@ -11,6 +12,10 @@ ul {
   list-style-type: none;
   padding: 100px;
 }
+.wrapper {
+  max-width: 800px;
+  margin: 60px auto;
+}
 
 .container {
   font-family: "Kanit", sans-serif;
@@ -19,6 +24,23 @@ ul {
   margin: 300px;
 }
 
+.search-button {
+  margin: 25px 0px 25px 0px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  border-width: 1px;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.location-button {
+  margin: -10px 0px 25px 0px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  border-width: 1px;
+  background-color: cornflowerblue;
+  color: white;
+}
 .search-bar-header {
   font-weight: 900;
   font-size: 40px;
@@ -56,4 +78,9 @@ ul {
 .weather-text {
   margin-top: 100px;
   text-align: center;
+}
+
+div .small-text {
+  display: block;
+  padding: 25px 10px 25px 10px;
 }

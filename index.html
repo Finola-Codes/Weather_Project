@@ -27,7 +27,7 @@
     <title>Weathery</title>
   </head>
   <body>
-      
+      <div class="wrapper">
     <div class="container">
        
       <div class="row">
@@ -43,10 +43,11 @@
             class="form-control"
             id="search-input"
           />
+          <input type="submit" value="Search" class="search-button"/>  
 
-          <input type="submit" value="Search"/>   
+         
     </form>
-    <button id="your-location-button">Current Location</button>
+    <button class="location-button" id="your-location-button">Current Location</button>
       </div>
    
       <div class="row">
@@ -76,7 +77,8 @@
         </div>
       </div>
 
-      <div class="row" >        
+      <div class="row" >   
+   
         <h3 class="forecast-header">Weather Later On</h2>
         <div class="col-2">
           <i class="fas fa-sun"></i>
@@ -98,9 +100,15 @@
           <i class="fas fa-cloud-sun"></i>
           <div class="day-of-week">Wed</div>
         </div>
+        
       </div>
-      
+     
     </div>
+<hr />         
+
+<smasll class="small-text">This project was coded by Finola Billings and is <a href="https://github.com/Finola-Codes/Weather_Project"> open-sourced on GitHub </a> and hosted on <a href="https://www.netlify.com/">Netlify. </a></small>
+    </div>
+ 
     <!--Functionality-->
     <script src="src/script.js"></script>
     <!--Icons-->
