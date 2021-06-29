@@ -4,7 +4,6 @@ h1 {
 }
 
 h3 {
-  text-decoration: underline;
   padding: 0px 0px 40px 0px;
 }
 
@@ -83,4 +82,14 @@ ul {
 div .small-text {
   display: block;
   padding: 25px 10px 25px 10px;
+}
+
+.temperature-now .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temperature-now .active:hover {
+  text-decoration: none;
 }

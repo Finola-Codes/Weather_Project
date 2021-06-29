@@ -4,33 +4,39 @@
 function convertToFahrenheit(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
-  let temperature = tempElement.innerHTML;
-  tempElement = (temperature * 9) / 5 + 32 + "°F";
+  // Add active link
+  celciusConversion.classList.add("active");
+  fahrenheitConversion.classList.remove("active");
+  tempElement.innerHTML = Math.round((celciusTemperature * 9) / 5 + 32);
 }
 
 function convertToCelcius(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
-  let temperature = tempElement.innerHTML;
-  tempElement = ((temperature - 32) * 5) / 9 + "°C";
+  celciusConversion.classList.remove("active");
+  fahrenheitConversion.classList.add("active");
+  tempElement.innerHTML = Math.round(celciusTemperature);
 }
 
-let celcius = document.querySelector("#celcius-link");
-celcius.addEventListener("click", convertToFahrenheit);
+// Activate links to convert weather
+let celciusConversion = document.querySelector("#fahrenheit-link");
+celciusConversion.addEventListener("click", convertToFahrenheit);
 
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", convertToCelcius);
+let fahrenheitConversion = document.querySelector("#celcius-link");
+fahrenheitConversion.addEventListener("click", convertToCelcius);
 
 // Show Response from Weather API
 
 function showTemp(response) {
   console.log(response);
+  // Identify Celcius Temp
+  celciusTemperature = Math.round(response.data.main.temp);
   // Locate Metric
-  let currentTemperature = Math.round(response.data.main.temp);
+  let currentTemperature = Math.round(celciusTemperature);
   // Identify Element to Change
   let currentTemperatureElement = document.querySelector("#temp");
   // Change Element to Metric
-  currentTemperatureElement.innerHTML = `${currentTemperature}°C`;
+  currentTemperatureElement.innerHTML = currentTemperature;
   // Change Country and City in HTML
   let city = response.data.name;
   let country = response.data.sys.country;
@@ -161,3 +167,7 @@ let currentTime = new Date();
 // Identify HTML to Change
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(currentTime);
+
+// Call current weather for celcius / fahrenheit conversions
+let celciusTemperature = null;
+getWeather();
