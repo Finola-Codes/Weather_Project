@@ -65,6 +65,35 @@ function showTemp(response) {
   }
 }
 
+// Weather Forecast Data
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["thu", "fri", "sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+          <div class="weather-forecast-day"> ${day} </div>
+         <img src="" alt="" width="34" class="forecast-img">
+         <div class="weather-forecast-temps">
+      <span class="weather-forecast-temp-max">
+      21°</span>
+      <span class="weather-forecast-temp-min">
+      16°
+      </span>
+        </div>
+        </div>
+      </div>`;
+  });
+
+  forecastElement = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 // Request Weather Details
 function getWeather(city) {
   let apiKey = "e0501d649ccc6a45061d0e391199d05c";
@@ -171,3 +200,5 @@ dateElement.innerHTML = formatDate(currentTime);
 // Call current weather for celcius / fahrenheit conversions
 let celciusTemperature = null;
 getWeather();
+
+displayForecast();
