@@ -11,6 +11,7 @@ ul {
   list-style-type: none;
   padding: 100px;
 }
+
 .wrapper {
   max-width: 800px;
   margin: 60px auto;
@@ -20,7 +21,6 @@ ul {
   font-family: "Kanit", sans-serif;
   background-color: whitesmoke;
   border-radius: 20px;
-  margin: 300px;
 }
 
 .search-button {
@@ -42,7 +42,7 @@ ul {
 }
 .search-bar-header {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .city-name {
@@ -92,4 +92,23 @@ div .small-text {
 
 .temperature-now .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.weather-forecast-day {
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.forecast-img {
+  margin-bottom: 15px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }

@@ -29,12 +29,13 @@
   <body>
       <div class="wrapper">
     <div class="container">
-       
+      
+    <div class="weather-search-section">
       <div class="row">
         <h1 class="search-bar-header">Tell me about the weather in...</h1>
       </div>
       <div class="row">
-        <div class="col-10">
+      <div class="col-10">
       <form id="search-form">
           <input
             type="text"
@@ -43,10 +44,13 @@
             class="form-control"
             id="search-input"
           />
+      <div class="row">  
+      <div class="col-4">    
           <input type="submit" value="Search" class="search-button"/>  
-
-         
+      </div>
+    </div>  
     </form>
+
     <button class="location-button" id="your-location-button">Current Location</button>
       </div>
    
@@ -79,33 +83,23 @@
         </div>
       </div>
 
+      <div class="weather-forecast">   
       <div class="row" >   
-   
-        <h3 class="forecast-header">Weather Later On</h2>
         <div class="col-2">
-          <i class="fas fa-sun"></i>
-          <div class="day-of-week">Sat</div>
+          <div class="weather-forecast-day"> Sat </div>
+         <img src="" alt="" width="34" class="forecast-img">
+         <div class="weather-forecast-temps">
+      <span class="weather-forecast-temp-max">
+      21°</span>
+      <span class="weather-forecast-temp-min">
+      16°
+      </span>
         </div>
-        <div class="col-2">
-          <i class="fas fa-cloud-rain"></i>
-          <div class="day-of-week">Sun</div>
         </div>
-        <div class="col-2">
-          <i class="fas fa-cloud"></i>
-          <div class="day-of-week">Mon</div>
-        </div>
-        <div class="col-2">
-          <i class="fas fa-sun"></i>
-          <div class="day-of-week">Tues</div>
-        </div>
-        <div class="col-1">
-          <i class="fas fa-cloud-sun"></i>
-          <div class="day-of-week">Wed</div>
-        </div>
-        
       </div>
-     
     </div>
+
+
 <hr />         
 
 <smasll class="small-text">This project was coded by Finola Billings and is <a href="https://github.com/Finola-Codes/Weather_Project"> open-sourced on GitHub </a> and hosted on <a href="https://www.netlify.com/">Netlify. </a></small>
