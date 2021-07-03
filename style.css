@@ -1,0 +1,114 @@
+h1 {
+  padding: 30px;
+  color: cornflowerblue;
+}
+
+h3 {
+  padding: 0px 0px 40px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 100px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 60px auto;
+}
+
+.container {
+  font-family: "Kanit", sans-serif;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.search-button {
+  margin: 25px 0px 25px 0px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  border-width: 1px;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.location-button {
+  margin: -10px 0px 25px 0px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  border-width: 1px;
+  background-color: cornflowerblue;
+  color: white;
+}
+.search-bar-header {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.city-name {
+  font-weight: 900;
+  padding: 20px 0px 0px 20px;
+  font-size: 80px;
+}
+
+.live-time-date {
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.date {
+  margin: 0px;
+}
+
+.temperature-now {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.current-temp-celcius {
+  margin: 0px 5px -15px 20px;
+  font-weight: 600;
+}
+
+.current-temp-farenheit {
+  margin: 0px 10px 15px 20px;
+}
+
+.weather-text {
+  margin-top: 100px;
+  text-align: center;
+}
+
+div .small-text {
+  display: block;
+  padding: 25px 10px 25px 10px;
+}
+
+.temperature-now .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.temperature-now .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.weather-forecast-day {
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.forecast-img {
+  margin-bottom: 15px;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}
