@@ -75,10 +75,6 @@ body {
   margin-bottom: 40px;
 }
 
-.temp-now-header {
-  font-size: 20px;
-}
-
 .temperature-now {
   font-size: 20px;
   font-weight: 400;
@@ -126,4 +122,8 @@ div .small-text {
 ul {
   list-style-type: none;
   padding: 100px;
+}
+
+div > h2 {
+  font-size: 20px;
 }
