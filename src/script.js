@@ -99,7 +99,7 @@ function displayForecast(response) {
            forecastDay.temp.min
          )}°
          </span>
-         
+
         </div>
         `;
     }
@@ -205,3 +205,5 @@ let currentTime = new Date();
 // Identify HTML to Change
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(currentTime);
+
+navigator.geolocation.getCurrentPosition(changeLocation);
