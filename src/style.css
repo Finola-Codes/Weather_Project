@@ -2,8 +2,15 @@ body {
   background-color: whitesmoke;
 }
 
+div > h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 60px auto;
   font-family: "Kanit", sans-serif;
   color: #070f4e;
@@ -20,9 +27,10 @@ body {
 }
 
 .application-header {
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 600;
   padding-bottom: 20px;
+  padding: 40px 0px 0px 20px;
 }
 
 .form-control::placeholder {
@@ -67,7 +75,8 @@ body {
 .city-name {
   font-weight: 600;
   padding: 40px 0px 0px 20px;
-  font-size: 60px;
+  font-size: 40px;
+  text-decoration: none;
 }
 
 .live-time-date {
@@ -76,23 +85,22 @@ body {
 }
 
 .temperature-now {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 40px;
-}
-
-.current-temp {
   font-weight: 600;
   font-size: 60px;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .current-weather-icon {
   width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-text {
-  margin-top: 80px;
   text-align: center;
+  padding: 20px;
 }
 
 div .small-text {
@@ -119,11 +127,7 @@ div .small-text {
   opacity: 0.4;
 }
 
-ul {
+.weather-info {
+  padding: 20px;
   list-style-type: none;
-  padding: 100px;
-}
-
-div > h2 {
-  font-size: 20px;
 }

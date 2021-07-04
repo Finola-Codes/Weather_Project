@@ -19,10 +19,10 @@ function showTemp(response) {
   // Change Weather Details
   document.querySelector(
     "#humidity"
-  ).innerHTML = ` Humidity: <br />${response.data.main.humidity}%`;
+  ).innerHTML = ` Humidity: ${response.data.main.humidity}%`;
   document.querySelector(
     "#wind-speed"
-  ).innerHTML = ` Wind: <br />${response.data.wind.speed} mph`;
+  ).innerHTML = ` Wind: ${response.data.wind.speed} mph`;
 
   // Change Icon
   let weatherIcon = document.querySelector("#current-weather-icon");
@@ -90,7 +90,7 @@ function displayForecast(response) {
          <img src="https://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
          }@2x.png" alt="weather-icon" width="34" class="forecast-img">
-
+         <br />
          <span class="weather-forecast-temps">
          <span class="weather-forecast-temp-max">${Math.round(
            forecastDay.temp.max
