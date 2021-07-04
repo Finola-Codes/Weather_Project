@@ -26,7 +26,7 @@ function showTemp(response) {
 
   // Change Icon
   let weatherIcon = document.querySelector("#current-weather-icon");
-  weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png" alt="weather-icon" class="current-weather-icon">`;
+  weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png" alt="weather-icon">`;
 
   // Change Weather Description
   let weatherDescriptionElement = document.querySelector(

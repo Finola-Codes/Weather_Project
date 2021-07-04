@@ -86,16 +86,9 @@ div > h2 {
 
 .temperature-now {
   font-weight: 600;
-  font-size: 60px;
-  display: block;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.current-weather-icon {
-  width: 100px;
-  display: block;
-  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
 }
 
 .weather-text {
