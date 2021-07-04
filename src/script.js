@@ -1,30 +1,5 @@
 // --- Weather Search ---
 
-// Convert Weather
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temp");
-  // Add active link
-  celciusConversion.classList.add("active");
-  fahrenheitConversion.classList.remove("active");
-  tempElement.innerHTML = Math.round((celciusTemperature * 9) / 5 + 32);
-}
-
-function convertToCelcius(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temp");
-  celciusConversion.classList.remove("active");
-  fahrenheitConversion.classList.add("active");
-  tempElement.innerHTML = Math.round(celciusTemperature);
-}
-
-// Activate links to convert weather
-let celciusConversion = document.querySelector("#fahrenheit-link");
-celciusConversion.addEventListener("click", convertToFahrenheit);
-
-let fahrenheitConversion = document.querySelector("#celcius-link");
-fahrenheitConversion.addEventListener("click", convertToCelcius);
-
 // Show Response from Weather API
 
 function showTemp(response) {
@@ -35,7 +10,7 @@ function showTemp(response) {
   // Identify Element to Change
   let currentTemperatureElement = document.querySelector("#temp");
   // Change Element to Metric
-  currentTemperatureElement.innerHTML = currentTemperature;
+  currentTemperatureElement.innerHTML = `${currentTemperature} °C`;
   // Change Country and City in HTML
   let city = response.data.name;
   let country = response.data.sys.country;
@@ -48,6 +23,10 @@ function showTemp(response) {
   document.querySelector(
     "#wind-speed"
   ).innerHTML = `${response.data.wind.speed} mph`;
+
+  // Change Icon
+  let weatherIcon = document.querySelector("#current-weather-icon");
+  weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png" alt="weather-icon" class="current-weather-icon">`;
 
   // Change Weather Description
   let weatherDescriptionElement = document.querySelector(
@@ -224,7 +203,3 @@ let currentTime = new Date();
 // Identify HTML to Change
 let dateElement = document.querySelector("#date");
 dateElement.innerHTML = formatDate(currentTime);
-
-// Call current weather for celcius / fahrenheit conversions
-let celciusTemperature = null;
-getWeather();

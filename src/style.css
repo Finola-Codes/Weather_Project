@@ -1,97 +1,107 @@
-h1 {
-  padding: 30px;
-  color: cornflowerblue;
-}
-
-h3 {
-  padding: 0px 0px 40px 0px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 100px;
+body {
+  background-color: whitesmoke;
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 600px;
   margin: 60px auto;
+  font-family: "Kanit", sans-serif;
+  color: #070f4e;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border-color: grey;
+  border-radius: 20px;
+  padding: 25px;
+  transition: all 150ms ease-in-out;
 }
 
-.container {
-  font-family: "Kanit", sans-serif;
-  background-color: white;
-  border-radius: 20px;
+.wrapper:hover {
+  border: thin;
+  border-color: whitesmoke;
+}
+
+.application-header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.form-control::placeholder {
+  color: blue;
+  font-size: 15px;
 }
 
 .search-button {
-  margin: 25px 0px 25px 0px;
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border-width: 0.02px;
+  border-color: #070f4e;
   border-radius: 5px;
-  border-color: blueviolet;
-  border-width: 1px;
-  background-color: cornflowerblue;
+  padding: 6px 12px;
+  transition: all 150ms ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #3ab1c8;
   color: white;
+  border: none;
 }
 
 .location-button {
-  margin: -10px 0px 25px 0px;
+  display: block;
+  margin: 0 auto;
   border-radius: 5px;
-  border-color: blueviolet;
-  border-width: 1px;
-  background-color: cornflowerblue;
-  color: white;
+  background-color: transparent;
+  border-width: 0.02px;
+  border-color: #070f4e;
+  padding: 10px 12px;
+  transition: all 150ms ease-in-out;
 }
-.search-bar-header {
-  font-weight: 900;
-  font-size: 32px;
+
+.location-button:hover {
+  background-color: #3ab1c8;
+  color: white;
+  border: none;
 }
 
 .city-name {
-  font-weight: 900;
-  padding: 20px 0px 0px 20px;
-  font-size: 80px;
+  font-weight: 600;
+  padding: 40px 0px 0px 20px;
+  font-size: 60px;
 }
 
 .live-time-date {
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 40px;
 }
 
-.date {
-  margin: 0px;
+.temp-now-header {
+  font-size: 20px;
 }
 
 .temperature-now {
-  font-size: 50px;
+  font-size: 20px;
   font-weight: 400;
+  margin-top: 40px;
 }
 
-.current-temp-celcius {
-  margin: 0px 5px -15px 20px;
+.current-temp {
   font-weight: 600;
+  font-size: 60px;
 }
 
-.current-temp-farenheit {
-  margin: 0px 10px 15px 20px;
+.current-weather-icon {
+  width: 100px;
 }
 
 .weather-text {
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
 
 div .small-text {
   display: block;
   padding: 25px 10px 25px 10px;
-}
-
-.temperature-now .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-
-.temperature-now .active:hover {
-  text-decoration: none;
 }
 
 .weather-forecast {
@@ -111,4 +121,9 @@ div .small-text {
 
 .weather-forecast-temp-min {
   opacity: 0.4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 100px;
 }
