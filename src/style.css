@@ -19,7 +19,7 @@ ul {
 
 .container {
   font-family: "Kanit", sans-serif;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 20px;
 }
 
@@ -110,5 +110,5 @@ div .small-text {
 }
 
 .weather-forecast-temp-min {
-  opacity: 0.6;
+  opacity: 0.4;
 }
