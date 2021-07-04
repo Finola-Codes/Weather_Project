@@ -59,13 +59,13 @@ function formatForecastDay(time) {
   let date = new Date(time * 1000);
   let day = date.getDay();
   let days = [
-    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
   ];
   return days[day];
 }
