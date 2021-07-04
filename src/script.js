@@ -81,21 +81,27 @@ function displayForecast(response) {
         forecastHTML +
         `
         <div class="col-2">
+
           <div class="weather-forecast-day"> ${formatForecastDay(
             forecastDay.dt
-          )} </div>
+          )} 
+          </div>
+
          <img src="https://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
          }@2x.png" alt="weather-icon" width="34" class="forecast-img">
+
          <span class="weather-forecast-temps">
-      <span class="weather-forecast-temp-max">
-      ${Math.round(forecastDay.temp.max)}°</span>
-      <span class="weather-forecasst-temp-min">
-     ${Math.round(forecastDay.temp.min)}°
-      </span>
-        </span>
+         <span class="weather-forecast-temp-max">${Math.round(
+           forecastDay.temp.max
+         )}°</span>
+         <span class="weather-forecasst-temp-min">${Math.round(
+           forecastDay.temp.min
+         )}°
+         </span>
+         
         </div>
-      </div>`;
+        `;
     }
   });
   forecastHTML = forecastHTML + `</div>`;
@@ -128,10 +134,6 @@ form.addEventListener("submit", findCity);
 
 // --- Geolocation Button ---
 
-// Request Current City Weather Details
-
-// Change HTML to Current City
-
 // Get Coordinates
 function changeLocation(position) {
   // Identify Location
@@ -146,7 +148,7 @@ function changeLocation(position) {
   axios.get(apiUrl).then(showTemp);
 }
 
-//
+// Locate
 function getPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(changeLocation);
