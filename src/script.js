@@ -58,15 +58,7 @@ function getForecast(coordinates) {
 function formatForecastDay(time) {
   let date = new Date(time * 1000);
   let day = date.getDay();
-  let days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   return days[day];
 }
 // Display Weather Forecast Data

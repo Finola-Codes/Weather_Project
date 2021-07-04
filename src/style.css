@@ -2,9 +2,15 @@ body {
   background-color: whitesmoke;
 }
 
+div > h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
 div > h2 {
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 800;
   text-decoration: underline;
 }
@@ -24,13 +30,6 @@ div > h2 {
 .wrapper:hover {
   border: thin;
   border-color: whitesmoke;
-}
-
-.application-header {
-  font-size: 40px;
-  font-weight: 600;
-  padding-bottom: 20px;
-  padding: 40px 0px 0px 20px;
 }
 
 .form-control::placeholder {
@@ -102,7 +101,7 @@ div .small-text {
 }
 
 .weather-forecast {
-  margin: 40px 0px 40px -14.5px;
+  margin: 40px 0px 40px -16px;
   text-align: center;
   font-size: 16px;
 }
