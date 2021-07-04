@@ -19,10 +19,10 @@ function showTemp(response) {
   // Change Weather Details
   document.querySelector(
     "#humidity"
-  ).innerHTML = `${response.data.main.humidity}%`;
+  ).innerHTML = ` Humidity: <br />${response.data.main.humidity}%`;
   document.querySelector(
     "#wind-speed"
-  ).innerHTML = `${response.data.wind.speed} mph`;
+  ).innerHTML = ` Wind: <br />${response.data.wind.speed} mph`;
 
   // Change Icon
   let weatherIcon = document.querySelector("#current-weather-icon");
