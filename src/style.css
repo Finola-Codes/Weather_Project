@@ -4,7 +4,7 @@ body {
 
 div > h2 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-weight: 800;
   text-decoration: underline;
 }
@@ -102,7 +102,7 @@ div .small-text {
 }
 
 .weather-forecast {
-  margin-bottom: 40px;
+  margin: 40px 0px 40px -14.5px;
   text-align: center;
   font-size: 16px;
 }
@@ -113,6 +113,7 @@ div .small-text {
 }
 
 .forecast-img {
+  width: 62px;
   margin-bottom: 15px;
 }
 

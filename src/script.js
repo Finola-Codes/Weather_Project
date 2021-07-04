@@ -89,7 +89,7 @@ function displayForecast(response) {
 
          <img src="https://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
-         }@2x.png" alt="weather-icon" width="34" class="forecast-img">
+         }@2x.png" alt="weather-icon" class="forecast-img">
          <br />
          <span class="weather-forecast-temps">
          <span class="weather-forecast-temp-max">${Math.round(
